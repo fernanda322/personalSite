@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title> Aplikasi Koprasi </title>
+    <meta name="description" content="Aplikasi yang pernah saya rancang bersama teman saya" property="og:description">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@hilmanski" />
+    <meta name="twitter:creator" content="@hilmanski" />
+    <meta property="og:url" content="http://fernanda322.github.io/eksperimen/aplikasi-koprasi/" />
+    <meta property="og:title" content="Aplikasi Koprasi " />
+    <meta property="og:description" content="Aplikasi yang pernah saya rancang bersama teman saya" />
+    <meta property="og:image" content="https://hilman.space/img/typewriter.png" />
+
+        <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98864351-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-98864351-2');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+    
+    <nav> <a href='/'> /Fernanda.Ramadhan</a> </nav>
+    
+
+    <div id="theme">
+        <div onclick="setDarkMode(true)" id="darkBtn" class=""> 🌚  <span>Dark</span></div>
+        <div onclick="setDarkMode(false)" id="lightBtn" class="is-hidden"> 🌝 <span>Light</span> </div>
+    </div>
+
+    <script>
+        
+        if(localStorage.getItem('preferredTheme') == 'dark') {
+            setDarkMode(true)
+        }
+
+        function setDarkMode(isDark) {
+            var darkBtn = document.getElementById('darkBtn')
+            var lightBtn = document.getElementById('lightBtn')
+
+            if(isDark) {
+                lightBtn.style.display = "block"
+                darkBtn.style.display = "none"
+                localStorage.setItem('preferredTheme', 'dark');
+            } else {
+                lightBtn.style.display = "none"
+                darkBtn.style.display = "block"
+                localStorage.removeItem('preferredTheme');
+            }
+
+            document.body.classList.toggle("darkmode");
+        }
+    </script>
+</header>
+
+
+
+
+<main id="single">
+    <h1 class="titles">Aplikasi Koprasi</h1>
+    <article id="content"><p>Berawal dari sebuah tugas yang diberikan oleh guru saya untuk memenuhi tugas akhir semester satu, pada saat itu guru saya memberikan waktu pengumpulan project tersebut hanya satu bulan yang diberikan pada bulan Oktober 2019 akan tetapi karena pada waktu itu dilaksanakannya bersamaan dengan waktu prakerin atau praktek lapangan kerja maka guru saya memberikan ketenggangan batas pengumpulan hingga Desember 2019.</p>
+<p>Berhubung tugas ini adalah kelompok maka saya bekerja sama dengan teman saya <a href="https://rolando26.github.io/">Rolando</a> sebagai salah satu orang yang bekerja sama dengan saya untuk membuat aplikasi tersebut, ya, kami tau ini sangat buruk karena kami tidak ada waktu untuk mengerjakannya bersama jadi kami saling remote satu sama lain pada saat itu karena, waktu kita sangat terbatas berubung waktu prakerin yang kami sangat - sangat sibuk.</p>
+<p>Waktu demi waktu saya dan teman saya <a href="https://rolando26.github.io/">Rolando</a> kami saling bereksperimen, bertukar pikiran satu sama lain untuk membuat aplikasi koprasi dari kami membuat konsep, design, alur, dan lain - lainya yang berhubungan dengan kebutuhan jalanya aplikasi koperasi tersebut.</p>
+</article>
+
+    <aside id="meta">
+        <section>
+          <h5 id="date"> Sun Nov 11, 2018 </h5>
+        </section>
+    </aside>
+</main>
+
+
+<footer>
+    <img src="/img/profile.png" alt="foto Fernanda Ramadhan" width="80" height="80" class="is-avatar img-small">
+    <p>Terima kasih sudah membaca, kontak/info sosmed saya ada di <a href="/">halaman awal</a>.
+        Cari artikel tertentu? <a href="/search">bisa disini</a>  </p>
+</footer>
+
+<div id="disqus_thread"></div>
+
+
+
+    <hr><br>
+    <a href="/">&lt;&lt; Kembali ke Halaman Awal</a>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://fernanda322.github.io/blog/</loc>
+    <lastmod>2020-09-23T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://fernanda322.github.io/</loc>
+    <lastmod>2020-09-23T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://fernanda322.github.io/main/</loc>
+    <lastmod>2020-09-23T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://fernanda322.github.io/eksperimen/aplikasi-koprasi/</loc>
+    <lastmod>2018-11-11T08:28:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://fernanda322.github.io/eksperimen/</loc>
+    <lastmod>2018-11-11T08:28:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://fernanda322.github.io/rekomendasi/</loc>
+    <lastmod>2018-11-11T08:28:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://fernanda322.github.io/rekomendasi/tool/</loc>
+    <lastmod>2018-11-11T08:28:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://fernanda322.github.io/notes/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://fernanda322.github.io/random/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://fernanda322.github.io/search/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://fernanda322.github.io/topnotes/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://fernanda322.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://fernanda322.github.io/kontak/</loc>
+  </url>
+  
+  <url>
+    <loc>http://fernanda322.github.io/tags/</loc>
+  </url>
+  
+</urlset>

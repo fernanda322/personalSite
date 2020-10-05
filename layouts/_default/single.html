@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<main id="single">
+    <h1 class="titles">{{ .Title }}</h1>
+    <article id="content">{{ .Content }}</article>
+
+    <aside id="meta">
+        <section>
+          <h5 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h5>
+        </section>
+    </aside>
+</main>
+
+{{ partial "info.html" . }}
+
+<div id="disqus_thread"></div>
+
+{{ end }}

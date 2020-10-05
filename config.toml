@@ -1,0 +1,15 @@
+baseURL = "http://fernanda322.github.io/"
+languageCode = "id"
+title = "Fernanda Ramadha | @fernanda.322"
+
+[params]
+  AuthorName = "Fernanda Ramadham"
+  GitHubUser = "fernanda322"
+  Subtitle = "Website Fernanda Ramadhan"
+
+[permalinks]
+  blog = "/:slug/"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+

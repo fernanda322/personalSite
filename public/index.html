@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta name="generator" content="Hugo 0.75.1" />
+    <title> Fernanda Ramadha | @fernanda.322 </title>
+    <meta name="description" content="" property="og:description">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@hilmanski" />
+    <meta name="twitter:creator" content="@hilmanski" />
+    <meta property="og:url" content="http://fernanda322.github.io/" />
+    <meta property="og:title" content="Fernanda Ramadha | @fernanda.322 " />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="https://hilman.space/img/typewriter.png" />
+
+        <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98864351-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-98864351-2');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+    
+
+    <div id="theme">
+        <div onclick="setDarkMode(true)" id="darkBtn" class=""> 🌚  <span>Dark</span></div>
+        <div onclick="setDarkMode(false)" id="lightBtn" class="is-hidden"> 🌝 <span>Light</span> </div>
+    </div>
+
+    <script>
+        
+        if(localStorage.getItem('preferredTheme') == 'dark') {
+            setDarkMode(true)
+        }
+
+        function setDarkMode(isDark) {
+            var darkBtn = document.getElementById('darkBtn')
+            var lightBtn = document.getElementById('lightBtn')
+
+            if(isDark) {
+                lightBtn.style.display = "block"
+                darkBtn.style.display = "none"
+                localStorage.setItem('preferredTheme', 'dark');
+            } else {
+                lightBtn.style.display = "none"
+                darkBtn.style.display = "block"
+                localStorage.removeItem('preferredTheme');
+            }
+
+            document.body.classList.toggle("darkmode");
+        }
+    </script>
+</header>
+
+
+    <main>
+        <section class="landing">
+            <div class="intro">
+                <h1> Halo, saya Fernanda Ramadhan </h1>
+
+                <h2> Saya bukan seorang programmer ataupun IT Profesional,
+                     Seorang pelajar yang suka bikin bikin sesuatu dengan pemrograman.
+                    Di sini kamu bisa baca blog atau melihat <a href="#work">eksperimen saya 💻</a>. </h2>
+                <h2>
+                      <a target="_blank" href='https://www.instagram.com/fernanda.322'>Instagram </a>/
+                      <a target="_blank" href='https://facebook.com/fer.putra322'>Facebook </a>/
+                      <a target="_blank" href='https://github.com/fernanda322'>Github </a>/
+                      <a href="/kontak"> Tinggalkan Pesan </a>
+                  </h2>
+            </div>
+
+            <img src="/img/profile.png" alt="foto Fernanda Ramadhan" width="150" height="150" class="is-avatar">
+        </section>
+
+        <hr>
+        <section>
+                <h3> Blog Pilihan terbaru </h3>
+                <ul>
+                    
+                         <li>
+                           <a href="http://fernanda322.github.io/main/"> Waktunya main bukan waktunya bekerja </a>
+                       </li>
+                   
+                  </ul>
+                  <p>Baca <a href="/notes">semua tulisan</a>
+                       
+                       atau <a href="/search">cari artikel tertentu</a>
+            </section>
+
+            <hr>
+            <section>
+                <h3> Rekomendasi</h3>
+                
+                   <a href="http://fernanda322.github.io/rekomendasi/tool/"> Tool </a> 
+               
+            </section>
+
+        <br><hr>
+        <section class="links" id="work">
+            <h3>Eksperimen 🔬 (Dari yang terbaru)</h3> <br>
+
+            
+                   <a href="http://fernanda322.github.io/eksperimen/aplikasi-koprasi/"> Aplikasi Koprasi </a> 
+               
+
+            </main>
+<br>
+    <a href="#">Kembali ke atas ☝️</a>
+</body>
+</html>

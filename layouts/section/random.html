@@ -1,0 +1,10 @@
+
+{{ $randomPosts := shuffle (where .Site.Pages "Type" "blog") | first 2 }}
+
+{{ range $randomPosts }}
+    <article>
+        <h2 class="titles"><a href="{{.Permalink}}"> {{.Title}} </a></h2>
+        <p>{{.Content}} </p>
+    </article>
+    <hr>
+{{ end }}

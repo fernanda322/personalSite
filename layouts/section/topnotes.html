@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<section id="content">
+    <h2>Blog Pilihan</h2>
+    {{ $v1 := where .Site.Pages "Section" "blog" }}
+    {{ $v2 := where .Site.Pages ".Title" "!=" "Blogs" }}
+    {{ $v3 := where .Site.Pages ".Params.status" "1" }}
+    {{ range $v1 | intersect $v2 | intersect $v3 }}
+         <li>
+           <a href="{{.Permalink}}"> {{.Title}} </a>
+        </li>
+   {{ end }}
+</section>
+
+<p><a href="/notes">Mau Baca terbaru?</a></p>
+
+{{ partial "info.html" . }}
+
+{{ end }}

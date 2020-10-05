@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title> Tool </title>
+    <meta name="description" content="rekomendasi tool untuk memudahkan hidup kamu" property="og:description">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@hilmanski" />
+    <meta name="twitter:creator" content="@hilmanski" />
+    <meta property="og:url" content="http://fernanda322.github.io/rekomendasi/tool/" />
+    <meta property="og:title" content="Tool " />
+    <meta property="og:description" content="rekomendasi tool untuk memudahkan hidup kamu" />
+    <meta property="og:image" content="https://hilman.space/img/typewriter.png" />
+
+        <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98864351-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-98864351-2');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+    
+    <nav> <a href='/'> /Fernanda.Ramadhan</a> </nav>
+    
+
+    <div id="theme">
+        <div onclick="setDarkMode(true)" id="darkBtn" class=""> 🌚  <span>Dark</span></div>
+        <div onclick="setDarkMode(false)" id="lightBtn" class="is-hidden"> 🌝 <span>Light</span> </div>
+    </div>
+
+    <script>
+        
+        if(localStorage.getItem('preferredTheme') == 'dark') {
+            setDarkMode(true)
+        }
+
+        function setDarkMode(isDark) {
+            var darkBtn = document.getElementById('darkBtn')
+            var lightBtn = document.getElementById('lightBtn')
+
+            if(isDark) {
+                lightBtn.style.display = "block"
+                darkBtn.style.display = "none"
+                localStorage.setItem('preferredTheme', 'dark');
+            } else {
+                lightBtn.style.display = "none"
+                darkBtn.style.display = "block"
+                localStorage.removeItem('preferredTheme');
+            }
+
+            document.body.classList.toggle("darkmode");
+        }
+    </script>
+</header>
+
+
+
+
+<main id="single">
+    <h1 class="titles">Tool</h1>
+    <article id="content"><p>Seperti biasa, ini tool pilihan saya, kamu tidak harus pakai tool yang sama, ditulis karena sering ditanyakan atau saya ingin membantu mempromosikan sebagai terima kasih karena toolnya sudah membantu saya. Karena saya menggunakan Windows, ada banyak tool yang khusus untuk windows.</p>
+<h3 id="personal"><strong>Personal</strong></h3>
+<p>Extra Monitor<br>
+Tidak penting saya sebutkan mereknya, tapi saya sangat menyarankan bekerja dengan monitor tambahan, produktivitas :D</p>
+<p>Kertas dan Pulpen<br>
+yap, harus selalu, setiap punya ide sebelum menuangkan ke laptop, mau menggambar, menulis atau membuat aplikasi, saya akan menuangkan ke kertas.</p>
+<p><a href="https://www.adobe.com/sea/products/photoshop.html?gclid=Cj0KCQjwtsv7BRCmARIsANu-CQdi7FV4PsfZmXOID0msqMN8dUu49VBezmYBy5uZdHZpuPTlnGCHNc0aArt3EALw_wcB&amp;sdid=12B9DXDJ&amp;mv=search&amp;ef_id=Cj0KCQjwtsv7BRCmARIsANu-CQdi7FV4PsfZmXOID0msqMN8dUu49VBezmYBy5uZdHZpuPTlnGCHNc0aArt3EALw_wcB:G:s&amp;s_kwcid=AL!3085!3!444512448900!e!!g!!adobe%20photoshop">Adobe Photoshop</a><br>
+Menggambar / mengedit foto/ membuat logo/icon saya pake Photoshop</p>
+<h3 id="extension-di-chrome">Extension di chrome</h3>
+<p><a href="https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=en">Momentum</a><br>
+Extention di chrome untuk setiap membuka tab baru, kamu tidak akan terdistraksi dan tampilan yang sederhana.</p>
+<p><a href="https://chrome.google.com/webstore/detail/idm-integration-extension/beobjkkhmebdklhjedacliojimbibppm?hl=id">Internet Download Managaer</a><br>
+Extention di chrome untuk setiap melakukan download.</p>
+<h3 id="extra"><strong>Extra</strong></h3>
+<p><a href="https://code.visualstudio.com/">Visual Studio Code</a><br>
+Kalau untuk text editor saya menggunakan Visual Studio Code karena aplikasi ini memiliki banyak Ekstensi.</p>
+<p><a href="https://firebase.google.com">Firebase</a><br>
+Kalau butuh website yang cepat developnya, bisa digunakan lengkap dengan database, saya akan menggunakan Firebase.</p>
+<p><a href="https://hootsuite.com/">HootSuite</a> / <a href="https://dlvrit.com/">DlvrIt</a> / <a href="http://fetchrss.com">FetchRss</a><br>
+Untuk memposting ke social media secara automatis saya menggunakan hootsuite / buffer / dlvrit. Kalau butuh membuat rss saya menggunakan fetchrss.</p>
+<p><a href="https://www.phpmyadmin.net/">Phpmyadmin</a><br>
+Urusan database localhost ataupun live saya memakai SequelPro</p>
+<p><a href="https://m.do.co/c/add83b15b18d">DigitalOcean</a> /<a href="https://zeit.co/now"> Zeit-Now</a> / Netlify<br>
+Untuk hosting proyek serius saya percaya dengan digitalocean, untuk yang cepat/prototype/testing saya memakai Zeit/Now . Untuk SSG saya pakai netlify</p>
+<p><a href="https://anchor.fm">Anchor</a> (Podcast)<br>
+Untuk podcast tehataukopi saya menggunakan ini. Sangat mudah untuk mengorganisir podcast, simple, mudah digunakan dan luar biasa</p>
+<p><a href="https://bitbucket.org">Bitbucket</a><br>
+Untuk mengamankan kode, dan menyimpannya, saya pakai bitbucket, tapi untuk private repo pakainya bitbucket.</p>
+<p><a href="http://github.com">Github</a><br>
+Untuk menyimpan kode, yang biasanya saya publish menggunakan github.</p>
+<p><a href="http://trello.com">Trello</a><br>
+Untuk &ldquo;tugas&rdquo; yang harus saya kerjakan, saya organisir di trello. Terutama untuk hal-hal yang berhubungan dengan lebih dari satu orang (pekerjaan atau komunitas).</p>
+</article>
+
+    <aside id="meta">
+        <section>
+          <h5 id="date"> Sun Nov 11, 2018 </h5>
+        </section>
+    </aside>
+</main>
+
+
+<footer>
+    <img src="/img/profile.png" alt="foto Fernanda Ramadhan" width="80" height="80" class="is-avatar img-small">
+    <p>Terima kasih sudah membaca, kontak/info sosmed saya ada di <a href="/">halaman awal</a>.
+        Cari artikel tertentu? <a href="/search">bisa disini</a>  </p>
+</footer>
+
+<div id="disqus_thread"></div>
+
+
+
+    <hr><br>
+    <a href="/">&lt;&lt; Kembali ke Halaman Awal</a>
+
+</body>
+</html>

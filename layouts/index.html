@@ -1,0 +1,57 @@
+{{ partial "header.html" . }}
+
+    <main>
+        <section class="landing">
+            <div class="intro">
+                <h1> Halo, saya Fernanda Ramadhan </h1>
+
+                <h2> Saya bukan seorang programmer ataupun IT Profesional,
+                     Seorang pelajar yang suka bikin bikin sesuatu dengan pemrograman.
+                    Di sini kamu bisa baca blog atau melihat <a href="#work">eksperimen saya 💻</a>. </h2>
+                <h2>
+                      <a target="_blank" href='https://www.instagram.com/fernanda.322'>Instagram </a>/
+                      <a target="_blank" href='https://facebook.com/fer.putra322'>Facebook </a>/
+                      <a target="_blank" href='https://github.com/fernanda322'>Github </a>/
+                      <a href="/kontak"> Tinggalkan Pesan </a>
+                  </h2>
+            </div>
+
+            <img src="/img/profile.png" alt="foto Fernanda Ramadhan" width="150" height="150" class="is-avatar">
+        </section>
+
+        <hr>
+        <section>
+                <h3> Blog Pilihan terbaru </h3>
+                <ul>
+                    {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
+                         <li>
+                           <a href="{{.Permalink}}"> {{.Title}} </a>
+                       </li>
+                   {{ end }}
+                  </ul>
+                  <p>Baca <a href="/notes">semua tulisan</a>
+                       <!-- <a href="/topnotes">bacaan pilihan</a> -->
+                       atau <a href="/search">cari artikel tertentu</a>
+            </section>
+
+            <hr>
+            <section>
+                <h3> Rekomendasi</h3>
+                {{ range where .Site.RegularPages  "Section" "rekomendasi" }}
+                   <a href="{{.Permalink}}"> {{.Title}} </a> 
+               {{ end }}
+            </section>
+
+        <br><hr>
+        <section class="links" id="work">
+            <h3>Eksperimen 🔬 (Dari yang terbaru)</h3> <br>
+
+            {{ range where .Site.RegularPages  "Section" "eksperimen" }}
+                   <a href="{{.Permalink}}"> {{.Title}} </a> 
+               {{ end }}
+
+            </main>
+<br>
+    <a href="#">Kembali ke atas ☝️</a>
+</body>
+</html>

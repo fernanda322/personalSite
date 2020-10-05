@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title> Waktunya main bukan waktunya bekerja </title>
+    <meta name="description" content="Setiap hari senin, biasanya orang mengeluh, waktunya kerja lagi deh. Coba bayangkan kalau kamu bangun dan kepikiran waktunya main lagi.. yeayy" property="og:description">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@hilmanski" />
+    <meta name="twitter:creator" content="@hilmanski" />
+    <meta property="og:url" content="http://fernanda322.github.io/main/" />
+    <meta property="og:title" content="Waktunya main bukan waktunya bekerja " />
+    <meta property="og:description" content="Setiap hari senin, biasanya orang mengeluh, waktunya kerja lagi deh. Coba bayangkan kalau kamu bangun dan kepikiran waktunya main lagi.. yeayy" />
+    <meta property="og:image" content="https://i.ibb.co/vsR7Gf9/Screen-Shot-2020-09-22-at-4-02-19-PM.png" />
+
+        <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98864351-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-98864351-2');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+    
+    <nav> <a href='/'> /Fernanda.Ramadhan</a> </nav>
+    
+
+    <div id="theme">
+        <div onclick="setDarkMode(true)" id="darkBtn" class=""> 🌚  <span>Dark</span></div>
+        <div onclick="setDarkMode(false)" id="lightBtn" class="is-hidden"> 🌝 <span>Light</span> </div>
+    </div>
+
+    <script>
+        
+        if(localStorage.getItem('preferredTheme') == 'dark') {
+            setDarkMode(true)
+        }
+
+        function setDarkMode(isDark) {
+            var darkBtn = document.getElementById('darkBtn')
+            var lightBtn = document.getElementById('lightBtn')
+
+            if(isDark) {
+                lightBtn.style.display = "block"
+                darkBtn.style.display = "none"
+                localStorage.setItem('preferredTheme', 'dark');
+            } else {
+                lightBtn.style.display = "none"
+                darkBtn.style.display = "block"
+                localStorage.removeItem('preferredTheme');
+            }
+
+            document.body.classList.toggle("darkmode");
+        }
+    </script>
+</header>
+
+
+
+
+<main id="single">
+    <h1 class="titles">Waktunya main bukan waktunya bekerja</h1>
+    <article id="content"><p>Hari senin, kita akan ketemu orang yang bilang &ldquo;Yah.. senin lagi.. kerja lagi deh..&rdquo;. Tapi sebagian orang, bangun dengan perasaan semangat, ingin mengerjakan apa yang ia tinggalkan. Bagaimana dengan kamu?</p>
+<p>Perhatikan saat kamu sedang berkumpul keluarga, orang dewasa biasanya duduk bercerita, sementara anak anak berlari.. tidak peduli sudah keringat.. dia terus berlari..<br>
+Mereka sedang bermain</p>
+<p>Saat orang bermain futsal atau basket, atau olahraga lainnya, meskipun bukan profesional, kita akan melihat senyum di muka, walaupun capeknya luar biasa, orang orang masih terus berlari mengerja bola.<br>
+Mereka sedang bermain</p>
+<p>Kalau kamu masih punya kemampuan, kerjakan apa yang kamu suka, tentunya kamu perlu berusaha untuk itu. Mungkin kamu perlu menyisihkan waktu, tenaga atau uang lebih. Kamu yang merasakan, apakah kamu suka dengan pekerjaan. Sementara itu, belajar cintai pekerjaan kamu saat ini.</p>
+<p>Alasan kenapa beberapa orang lebih unggul, ketika dia mencintai pekerjaannya, karena semua terasa seperti sedang bermain. Sementara orang lain bosan dan lelah karena sedang bekerja.</p>
+</article>
+
+    <aside id="meta">
+        <section>
+          <h5 id="date"> Wed Sep 23, 2020 </h5>
+        </section>
+    </aside>
+</main>
+
+
+<footer>
+    <img src="/img/profile.png" alt="foto Fernanda Ramadhan" width="80" height="80" class="is-avatar img-small">
+    <p>Terima kasih sudah membaca, kontak/info sosmed saya ada di <a href="/">halaman awal</a>.
+        Cari artikel tertentu? <a href="/search">bisa disini</a>  </p>
+</footer>
+
+<div id="disqus_thread"></div>
+
+
+
+    <hr><br>
+    <a href="/">&lt;&lt; Kembali ke Halaman Awal</a>
+
+</body>
+</html>

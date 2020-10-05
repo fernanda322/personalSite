@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>  </title>
+    <meta name="description" content="" property="og:description">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@hilmanski" />
+    <meta name="twitter:creator" content="@hilmanski" />
+    <meta property="og:url" content="http://fernanda322.github.io/search/" />
+    <meta property="og:title" content=" " />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="https://hilman.space/img/typewriter.png" />
+
+        <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98864351-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-98864351-2');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+    
+    <nav> <a href='/'> /Fernanda.Ramadhan</a> </nav>
+    
+
+    <div id="theme">
+        <div onclick="setDarkMode(true)" id="darkBtn" class=""> 🌚  <span>Dark</span></div>
+        <div onclick="setDarkMode(false)" id="lightBtn" class="is-hidden"> 🌝 <span>Light</span> </div>
+    </div>
+
+    <script>
+        
+        if(localStorage.getItem('preferredTheme') == 'dark') {
+            setDarkMode(true)
+        }
+
+        function setDarkMode(isDark) {
+            var darkBtn = document.getElementById('darkBtn')
+            var lightBtn = document.getElementById('lightBtn')
+
+            if(isDark) {
+                lightBtn.style.display = "block"
+                darkBtn.style.display = "none"
+                localStorage.setItem('preferredTheme', 'dark');
+            } else {
+                lightBtn.style.display = "none"
+                darkBtn.style.display = "block"
+                localStorage.removeItem('preferredTheme');
+            }
+
+            document.body.classList.toggle("darkmode");
+        }
+    </script>
+</header>
+
+
+
+
+<section id="content">
+    <h2>Cari artikel tertentu</h2>
+    <input type="text" id="search" v-model="query" placeholder="Ketika kata kunci">
+    <br><br>
+
+    <li v-for="item in filteredItems">
+        <a v-bind:href="item.link"> ${ item.title } </a>
+     </li>
+</section>
+
+<p> Lainnya: <a href="/notes">Baca Blog terbaru</a>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"> </script>
+<script>
+
+    (async () => {
+    const res = await fetch('/index.json');
+    const itemsRaw = await res.json();
+    const items = itemsRaw.data
+    console.log(items)
+
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    var _query = urlParams.has('q') ? urlParams.get('q') : ""
+
+    new Vue({
+      delimiters: ['${', '}'],
+      el: '#content',
+      data: {
+          items: items,
+          query : _query
+      },
+      computed: {
+          filteredItems: function() {
+              let itemWithFilter = this.items.filter((item) => {
+                                    return item.title.toLowerCase().includes(this.query.toLowerCase())
+                                })
+
+            return itemWithFilter
+          }
+      }
+    })
+  })();
+</script>
+
+
+
+    <hr><br>
+    <a href="/">&lt;&lt; Kembali ke Halaman Awal</a>
+
+</body>
+</html>
